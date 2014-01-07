@@ -11,8 +11,6 @@
 # http://www.gnu.org/copyleft/gpl.html
 
 # Variables setup
-DIRSource="$1"
-DIRDestination="$2"
 
 # Function Setup
 function finished { tput setaf 3; echo -e "\rDONE! ;-)"; tput sgr0; exit 0; }
@@ -21,7 +19,7 @@ function presskey { tput setaf 3;read -p "Press [Enter] key to start the DRY-RUN
 function dryrun { tput setaf 6; echo -e "\rDRY-RUNning..."; tput sgr0; }
 
 # Checkout arguments if incorrect show ERROR message
-if [ -z $DIRSource ] || [ -z $DIRDestination ];
+if [ -z "$1" ] || [ -z "$2" ];
 then
     die "Usage: mbak.sh FolderNameSource FolderNameDestination"
 fi
