@@ -13,6 +13,10 @@ Scripts description
    
 * `mbak.sh`: This script is syncing two folders by [rsync][rsync] program. `rsync` MUST be installed and accessible before you attempt to run this script. The reason of this script is to escape annoying `rsync` parameters input ;)
 
+* `sqlBackUp.sh`: This script is used to backup MySQL/MariaDB database (DUMP it). Wrote for ash shell which is used by Synology NAS.<br>
+   **Note :** This script is not a BASH script. Tested by [ASH][ash] shell only.<br>
+   ***Requires :*** Synology NAS with [ASH][ash] inside.
+   
 * `All Applications`:<br>
    **Note :** This code is not well optimized. If any tips, write me about.<br>
    ***Requires :*** [BASH][bash] MUST be exist on your platform and running. Mac OS and Linux has it from the BOX.<br>
@@ -59,3 +63,4 @@ send a Pull Request.
 [dimig]:http://dimig.blogspot.com
 [rsync]:http://rsync.samba.org
 [bash]:http://www.gnu.org/software/bash
+[ash]:http://en.wikipedia.org/wiki/Almquist_shell
