@@ -10,13 +10,20 @@ Scripts description
 -------------------
 
 ### myBASHscripts folder
-   
-* `mbak.sh`: This script is syncing two folders by [rsync][rsync] program. `rsync` MUST be installed and accessible before you attempt to run this script. The reason of this script is to escape annoying `rsync` parameters input ;)
+
+* `mbak.sh`: This script is syncing two folders by [rsync][rsync] program. `rsync` MUST be installed and accessible before you attempt to run this script.<br>
+   The reason of this script is to escape annoying `rsync` parameters input ;)
 
 * `sqlBackUp.sh`: This script is used to backup MySQL/MariaDB database (DUMP it). Wrote for ash shell which is used by Synology NAS.<br>
    **Note :** This script is not a BASH script. Tested by [ASH][ash] shell only.<br>
    ***Requires :*** Synology NAS with [ASH][ash] inside.
-   
+
+* `startatd.sh`: This script is starting the atd daemon on Synology Box. Wrote for ash shell which is used by Synology NAS.<br>
+   **Note :** This script is not a BASH script. Tested by [ASH][ash] shell only.<br>
+   The atd installed by Synology bootstrap (ipkg). The script MUST be located in /usr/local/etc/rc.d/ It must contain the "sh" suffix<br>
+   The permission must be 755 It must contain the options “start” and “stop” When the system boots up, it will call “startatd.sh start”<br>
+   When Synology shuts down, it will call “startatd.sh stop”
+
 * `All Applications`:<br>
    **Note :** This code is not well optimized. If any tips, write me about.<br>
    ***Requires :*** [BASH][bash] MUST be exist on your platform and running. Mac OS and Linux has it from the BOX.<br>
