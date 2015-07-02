@@ -19,9 +19,9 @@ Scripts description
    ***Requires :*** Synology NAS with [ASH][ash] inside.
 
 * `startatd.sh`: This script is starting the atd daemon on Synology Box. Wrote for ash shell which is used by Synology NAS.<br>
-   **Note :** This script is not a BASH script. Tested by [ASH][ash] shell only.<br>
-   The atd installed by Synology bootstrap (ipkg). The script MUST be located in /usr/local/etc/rc.d/ It must contain the "sh" suffix<br>
-   The permission must be 755 It must contain the options “start” and “stop” When the system boots up, it will call “startatd.sh start”<br>
+   **Note :** This script is not a BASH script. Tested by [ASH][ash] shell only. The atd installed by Synology bootstrap (ipkg). 
+   The script MUST be located in /usr/local/etc/rc.d/ It must contain the "sh" suffix. The permission must be 755 
+   It must contain the options “start” and “stop” When the system boots up, it will call “startatd.sh start”. 
    When Synology shuts down, it will call “startatd.sh stop”
 
 * `All Applications`:<br>
