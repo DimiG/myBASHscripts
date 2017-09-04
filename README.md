@@ -24,6 +24,9 @@ Scripts description
    It must contain the options “start” and “stop”. When the system boots up, it will call “startatd.sh start”. 
    When Synology shuts down, it will call “startatd.sh stop”.
 
+* `helloMyMAC.sh`: This script DO NOTHING. Just Hello World in MAC OS.<br>
+   The reason of this script is testing...
+
 * `All Applications`:<br>
    **Note :** This code is not well optimized. If any tips, write me about.<br>
    ***Requires :*** [BASH][bash] MUST be exist on your platform and running. Mac OS and Linux has it from the BOX.<br>
